@@ -1,0 +1,44 @@
+/* General table styling */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Ensures seamless borders */
+  margin: 20px 0;
+  border: 1px solid black; /* Common border for the entire table */
+}
+
+th,
+td {
+  border: 1px solid black; /* Common border for each cell */
+  text-align: center;
+  padding: 8px;
+}
+
+/* Remove input field borders and fit them inside the cells */
+input[type="text"],
+input[type="number"] {
+  border: none; /* Remove borders of input fields */
+  width: 100%; /* Make the input span the full width of the cell */
+  height: 100%; /* Make the input span the full height of the cell */
+  text-align: center; /* Align text inside inputs */
+  box-sizing: border-box; /* Ensure padding does not overflow */
+}
+
+/* Ensure consistent button styling */
+button {
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+th:first-child,
+td:first-child {
+  width: 300px; /* Increase the width of the first column */
+}
+body {
+  margin: 0; /* Ensure no margin causing overflow */
+  padding: 0; /* Ensure no padding causing overflow */
+  overflow: hidden; /* Disable scrolling */
+}
